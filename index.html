@@ -21,11 +21,42 @@ p {
   bacground: black;
 
 }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+  nav ul {
+    position: sticky;
+    top: 0;
+  }
+}
+nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+nav ul li a.current {
+  background: black;
+}
 </style>
+
+
   <meta charset="UTF-8">
   <title>Caleb Grode.io</title>
 </head>
 <body>
+  <nav>
+<ul align="right">
+<li>bob</li>
+<li>henry</li>
+<li>wilma</li>
+<li>Don</li>
+</ul>
+  </nav>
   <h1>Hola</h1>
   <p align="center">This is a paragraph</p>
 </body>
