@@ -26,30 +26,6 @@ p {
   font-size: 20px;
 
 }
-nav {
-   white-space: nowrap;
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* Only stick if you can fit */
-@media (min-height: 300px) {
-  nav ul {
-    position: sticky;
-    top: 0;
-  }
-}
-nav ul li a {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: white;
-  text-decoration: none;
-}
-nav ul li a.current {
-  background: black;
-}
 .sidenav {
 
   position: fixed;
@@ -74,8 +50,8 @@ nav ul li a.current {
 }
 
 .main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
+  margin-right: 140px;
+  font-size: 28px;
   padding: 0px 10px;
 }
 
@@ -90,120 +66,19 @@ nav ul li a.current {
   <title>Main Page</title>
 </head>
 <body>
-  <div class="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
+  <div class="sidenav" align="right">
+  <a href="#about">About Me</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact Me</a>
 </div>
-  <nav>
-  <ul align="right">
-  <li>bob</li>
-  <li>henry</li>
-  <li>wilma</li>
-  <li>Don</li>
-  </ul>
-  </nav>
-  <main>
+
+
   <h1>Hola</h1>
-  <p align="center">This is a paragraph
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  makin u scrol</p>
-</main>
+  <div class="main">
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+ <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+ <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+ <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
 </body>
 </html>
