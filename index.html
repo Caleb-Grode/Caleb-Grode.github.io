@@ -50,6 +50,7 @@ p {
   font-size: 25px;
   color: white;
   display: block;
+  line-height: 1.5;
 }
 
 .sidenav a:hover {
@@ -59,6 +60,9 @@ p {
 .container-fluid{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 13px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 section {
   height: 100vh;
@@ -72,9 +76,7 @@ section:nth-child(2) {
 section:nth-child(3) {
   background: linear-gradient(90deg, rgba(29,222,253,1) 0%, rgba(139,69,252,1) 91%);
 }
-.vertCenter {
- height: 50vh;
-}
+
 </style>
 
 
@@ -90,7 +92,7 @@ section:nth-child(3) {
 </div>
 
 <section>
-  <div class="vertCenter">
+  <div>
 <div class="container-fluid">
 	<div class="row" align="center">
   <div class="col-sm-2"></div>
@@ -103,7 +105,7 @@ section:nth-child(3) {
   <div class="col-sm-2"></div>
 	</div>
 </div>
-</div>
+
 </section>
 
 <section>
