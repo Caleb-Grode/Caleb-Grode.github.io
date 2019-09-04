@@ -73,18 +73,18 @@ section:nth-child(1) {
 }
 */
 .fadein {
-    opacity: 0;
+    opacity: 0.6;
     transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -webkit-transition: opacity 1s ease-in-out;
 }
 
-.contactLinks {
+.githubLink {
   font-size: 20;
   text-align: center;
 
 }
-.contactLinks:hover ~ .fadein {
+#githubLink:hover ~ #githubLogo {
   
     opacity: 1.0;
     transition: opacity .55s ease-in-out;
@@ -143,13 +143,13 @@ section:nth-child(1) {
 <section>
 
 <div class="container-fluid" id="contact">
-	<div class="contactLinks" align="center">
+	<div align="center">
   <div class="col-sm-4"><a>Linked In</a></div>
-  <div class="col-sm-4"><a>Github</a></div>
+  <div class="col-sm-4"><a class="githubLink">Github</a></div>
   <div class="col-sm-4"><a>Something</a></div>
 	</div>
 </div>
-<img src="GitHub-logo.png" class="fadein">
+<img src="GitHub-logo.png" class="githubLogo">
 </section>
 
 
