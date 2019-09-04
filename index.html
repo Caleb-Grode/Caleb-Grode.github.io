@@ -78,21 +78,21 @@ section:nth-child(1) {
   text-align: center;
   top: 25%;
 }
-.githubLogo {
+.githubLink {
   top:65%;
   left: -10%;
-    height: 35%;
-    width: 35%;
-    opacity: 0.1;
-    transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -webkit-transition: opacity 1s ease-in-out;
+  height: 35%;
+  width: 35%;
+  opacity: 0.1;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
 }
 a.githubLink:hover {
-  color: red;
+  color: burlywood;
 }
 
-a.githubLink:hover ~ img.githubLogo {
+div.githubLink:hover {
   
     opacity: 1.0;
     transition: opacity .55s ease-in-out;
@@ -152,13 +152,13 @@ a.githubLink:hover ~ img.githubLogo {
 
 <div class="container-fluid" id="contact">
 	<div align="center" class="links">
+  <div class="col-sm-4"> <div class="githublink"> <a class="githubLink">Github</a> </div> </div>
   <div class="col-sm-4"><a>Linked In</a></div>
-  <div class="col-sm-4"><a class="githubLink">Github</a></div>
   <div class="col-sm-4"><a>Something</a></div>
 	</div>
 </div>
 
-<img src="GitHub-logo.png" class="githubLogo">
+<img src="GitHub-logo.png" class="githubLink">
 
 
 
