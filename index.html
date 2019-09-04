@@ -67,23 +67,32 @@ p {
 section {
   height: 100vh;
 }
-.fadein {
-    opacity: 0.6;
-    transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -webkit-transition: opacity 1s ease-in-out;
-}
-.fadein:hover {
-    opacity: 1.0;
-    transition: opacity .55s ease-in-out;
-    -moz-transition: opacity .55s ease-in-out;
-    -webkit-transition: opacity .55s ease-in-out;
-}
 /*
 section:nth-child(1) {
   background: red;
 }
 */
+.fadein {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+
+.contactLinks {
+  font-size: 20;
+  text-align: center;
+
+}
+.contactLinks:hover ~ .fadein {
+  
+    opacity: 1.0;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
+  
+}
+
 
 </style>
 
@@ -132,14 +141,15 @@ section:nth-child(1) {
 </section>
 
 <section>
-<img src="GitHub-logo.png" class="fadein">
+
 <div class="container-fluid" id="contact">
-	<div class="row" align="center">
-  <div class="col-sm-4">Linked In</div>
+	<div class="contactLinks" align="center">
+  <div class="col-sm-4"><a>Linked In</a></div>
   <div class="col-sm-4"><a>Github</a></div>
-  <div class="col-sm-4">Something</div>
+  <div class="col-sm-4"><a>Something</a></div>
 	</div>
 </div>
+<img src="GitHub-logo.png" class="fadein">
 </section>
 
 
