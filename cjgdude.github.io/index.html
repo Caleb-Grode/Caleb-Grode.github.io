@@ -62,7 +62,7 @@ p {
   font-size: 13px;
   position: relative;
   top: 32%;
-  
+
 }
 section {
   height: 100vh;
@@ -81,6 +81,8 @@ section:nth-child(1) {
 .fadeIn {
   top:65%;
   left: -6%;
+  height: 35%;
+  width: 35%;
   opacity: 0.2;
   transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
@@ -89,21 +91,25 @@ section:nth-child(1) {
 
 
 .fadeIn:hover {
-  
+
     opacity: 1.0;
     transition: opacity .55s ease-in-out;
     -moz-transition: opacity .55s ease-in-out;
     -webkit-transition: opacity .55s ease-in-out;
-  
-}
 
+}
+.jumbotron {
+  background: #585b5e
+}
 
 </style>
 
 
 <body>
-
-
+  <div class="jumbotron">
+    <h1>Bootstrap Tutorial</h1>
+    <p>Bootstrap is the most popular HTML, CSS...</p>
+  </div>
 
 
 <div class="sidenav" align="center">
@@ -113,7 +119,7 @@ section:nth-child(1) {
 </div>
 
 <section id="about">
-  
+
 <div class="container-fluid">
 	<div class="row" align="center">
   <div class="col-sm-2"></div>
@@ -125,17 +131,17 @@ section:nth-child(1) {
 </p></div>
   <div class="col-sm-2"></div>
 	</div>
-
+</div>
 
 </section>
 
 <section id="projects">
 <div class="container-fluid" >
 	<div class="row" align="center">
-  <div class="col-sm-1"></div>
-  <div class="col-sm-5"><p>Hagro here!</p></div>
-  <div class="col-sm-5">Arduino Project Here</div>
-  <div class="col-sm-1"></div>
+  <div class="col-sm-2"></div>
+  <div class="col-sm-4">ARDUINO VIZ HERE</div>
+  <div class="col-sm-4"> <h1>HAGRO HERE</h1></div>
+  <div class="col-sm-2"></div>
 	</div>
 </div>
 </section>
