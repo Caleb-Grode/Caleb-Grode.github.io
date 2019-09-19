@@ -35,10 +35,6 @@ p {
   font-size: 20px;
 
 }
-.linkinP{
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 20px;
-}
 .sidenav {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   position: fixed;
@@ -72,11 +68,7 @@ p {
 section {
   height: 100vh;
 }
-/*
-section:nth-child(1) {
-  background: red;
-}
-*/
+
 .links{
   color: black;
   font-size: 20px;
@@ -88,7 +80,7 @@ section:nth-child(1) {
   left: -6%;
   height: 35%;
   width: 35%;
-  opacity: 0.2;
+  opacity: 0.5;
   transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -webkit-transition: opacity 1s ease-in-out;
@@ -114,10 +106,11 @@ section:nth-child(1) {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-.projectIMG {
-  border 100px;
-  border-color: white;
-  border-style: solid;
+.projectText {
+  color: white;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 20px;
+
 }
 .GitHubLogo {
   width: 135%;
@@ -167,26 +160,27 @@ section:nth-child(1) {
 
   <div class="col-sm-2"></div>
   <div class="col-sm-4">
-    <div class="card" style="width:550px">
-  <img class="card-img-top" src="ledViz.gif" alt="Card image">
-  <div class="card-body">
-    <h4 class="card-title">LED Audio Visulizer</h4>
-    <p class="card-text">Some example text.</p>
-    <a href="#" class="btn btn-primary">Check it out</a>
+  <div class="projectText">
+    <h4 class="card-title">LED Audio Visualizer</h4>
+    <p>My Audio Visualizer reacts dynamically to a sound input. Through an audio-in jack, the visualizer can be used with speakers, computers, phones and more to create a light show on demand relative to the sound input!</p>
+    <li>Colorful visual presentation of sound</li>
+    <li>Arduino controlled</li>
+    <li>Usable with any device with audio out</li>
+
+    <a href="" class="btn btn-primary">Check it out</a>
   </div>
-</div>
+
   </div>
 </div>
   </div>
   <div class="col-sm-4">
-    <div class="card" style="width:550px">
-  <img class="card-img-top" src="HaGroExample.gif" alt="Card image">
-  <div class="card-body">
-    <h4 class="card-title">HaGro Fitness App</h4>
-    <p class="card-text">Some example text.</p>
-    <a href="#" class="btn btn-primary">Check it out</a>
+    <div class="projectText">
+    <h4>HaGro Fitness App</h4>
+    <li>Fitness tracking geared toward the college track athlete</li>
+    <li>Track mileage, sleep and heart rate!</li>
+    <li>Integrated communication between coaches and athletes</li>
+    <a href="" class="btn btn-primary">Check it out</a>
   </div>
-</div>
 </div>
   <div class="col-sm-2"></div>
 
